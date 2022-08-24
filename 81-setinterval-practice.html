@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: "digital";
+      src: url("assets/font/digital.ttf");
+    }
+    .clock {
+      font-family: digital;
+      list-style: none;
+      margin: 0;
+      padding: 1rem;
+      display: flex;
+      font-size: 4rem;
+      background-color: rgb(189, 184, 184);
+      border-radius: 0.5rem;
+      justify-content: center;
+      color: rgb(5, 141, 5);
+    }
+
+    .hidden{
+      visibility: hidden;
+    }
+  </style>
+  <body>
+    <ul class="clock" id="clock">
+      <li>23</li>
+      <li class="hidden">:</li>
+      <li>34</li>
+
+      <script src="assets/js/81-setinterval-practice.js"></script>
+    </ul>
+  </body>
+</html>
