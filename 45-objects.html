@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const car = {
+        id: "123",
+        brand: "Mercedes",
+        model: "S500",
+        color: "red",
+        age: 2020,
+      };
+
+      const bus = {};
+
+      console.log(car);
+      console.log(typeof car);
+      console.log(car.brand);
+      car.age = 2022;
+      console.log(car.age);
+      if (bus) {
+        console.log("test1");
+      } else {
+        console.log("test2");
+      }
+      //Bir objenin icinin  dolu olup olmadigi nasil anlasilir
+      console.log(Object.keys(bus).length);
+      console.log(Object.keys(car).length);
+    </script>
+  </body>
+</html>

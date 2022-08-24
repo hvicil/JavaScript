@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="txtNumber" />
+    <button onclick="calculate()">Calculate</button>
+    <h3 id="result" class="result">...</h3>
+    <script>
+      function calculate() {
+        const elNum = document.querySelector("#txtNumber");
+
+        num = isNaN(elNum.value + 1) ? 0 : elNum.value;
+        num = elNum.value == 0 ? 1 : elNum.value;
+
+        let factoriel = 1;
+
+        do {
+          factoriel *= num;
+          num--;
+        } while (num > 0);
+
+        document.querySelector(
+          "#result"
+        ).innerText = `${elNum.value}! =${factoriel}`;
+      }
+    </script>
+  </body>
+</html>

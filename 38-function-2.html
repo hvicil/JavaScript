@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="txtNumber" />
+    <button onclick="handleCalculateClick()">Calculate</button>
+    <h3 id="result" class="result">...</h3>
+    <script>
+      function handleCalculateClick() {
+        const age = document.querySelector("#txtNumber").value;
+        document.querySelector("#result").innerHTML = getAge(age);
+      }
+      function getAge(year) {
+        if (!year || isNaN(year)) return;
+        const dateTime = new Date();
+        const currentYear = dateTime.getFullYear();
+        if (currentYear < year) return;
+        const age = currentYear - year;
+        return age;
+      }
+    </script>
+  </body>
+</html>

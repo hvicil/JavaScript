@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #product-list span {
+        font-weight: bold;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="txtRate" />
+    <button onclick="calculalte()">Update</button>
+    <ul id="product-list">
+      <li>Notebook <span>1500</span>$</li>
+      <li>Monitor <span>500</span>$</li>
+      <li>Keyboard <span>10</span>$</li>
+      <li>Mouse <span>5</span>$</li>
+      <li>Sound Car <span>150</span>$</li>
+    </ul>
+
+    <script>
+      function calculalte() {
+        let rate = document.querySelector("#txtRate").value;
+
+        rate = !isNaN(rate) ? rate : 0;
+
+        const list = document.querySelectorAll("#product-list li");
+        console.log(list.length);
+
+        for (let i = 1; i <= list.length; i++) {
+          const elPrice = document.querySelector(
+            `#product-list li:nth-child(${i}) span`
+          );
+
+          let price = Number(elPrice.innerHTML);
+          price = price + (price * rate) / 100;
+          elPrice.innerHTML = price.toFixed(0);
+        }
+      }
+    </script>
+  </body>
+</html>

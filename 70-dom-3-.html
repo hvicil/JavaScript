@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <style></style>
+  </head>
+  <body>
+    <h2 id="title">Bugün hava <span style="display: none">çok</span> sıcak</h2>
+
+    <h3 id="desc1"></h3>
+    <h3 id="desc2"></h3>
+    <h3 id="desc3"></h3>
+
+    <script>
+      title = document.querySelector("#title");
+      document.querySelector("#desc1").innerText = title.innerText;
+      document.querySelector("#desc2").innerText = title.innerHTML;
+      document.querySelector("#desc3").innerText = title.textContent;
+
+      console.log(title.innerText);
+      console.log(title.innerHTML);
+      console.log(title.textContent);
+    </script>
+  </body>
+</html>

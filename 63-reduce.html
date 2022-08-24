@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const nums = [123, 45, 23, 12, 66, 23];
+
+      //Klasik yontem
+
+      let total = 0;
+
+      for (let i = 0; i < nums.length; i++) {
+        total += nums[i];
+      }
+      console.log(total);
+
+      //REDUCE
+      const t = nums.reduce((toplam, x) => toplam + x, 0);
+      console.log(t);
+
+      //REDUCE EXAMLE
+      const salaries = [2000, 2500, 5500, 10000, 1000, 1500];
+
+      const totalSalary = salaries
+        .filter((salary) => salary < 3000)
+        .map((salary) => salary * 1.1)
+        .reduce((total, salary) => total + salary);
+
+      console.log(totalSalary);
+    </script>
+  </body>
+</html>

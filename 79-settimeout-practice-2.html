@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {
+        padding-top: 30px;
+      }
+      nav.menu {
+        background-color:indigo;
+        color: white;
+
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -56px;
+        transition: top 1s;
+      }
+
+      nav.menu ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 1rem;
+        margin:0;
+        padding: 1rem;
+      }
+      nav.menu .switch {
+        background-color: rgb(102, 101, 102);
+        color: white;
+      }
+
+      nav.menu.opened {
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="menu" class="menu">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Projects</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+      <div class="switch">OPEN</div>
+    </nav>
+    <main>
+      <p>
+        <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          iure cumque earum consectetur debitis sunt sapiente porro eaque,
+          expedita omnis ab tempore ipsam sit consequatur est veritatis
+          voluptates eveniet temporibus?</span
+        ><span
+          >Deserunt, autem. Error, dolore qui minus modi facilis iste vitae!
+          Eius alias quasi laudantium non reprehenderit voluptate quis fuga
+          nulla debitis excepturi illum, deleniti velit totam distinctio, nihil
+          ullam a!</span
+        ><span
+          >Quod rem in perferendis, et cupiditate labore optio sapiente
+          aspernatur iusto vero? Eveniet deserunt explicabo esse, animi libero
+          reprehenderit tempora dolorem optio quasi, beatae suscipit, sapiente
+          consequatur accusantium porro vero!</span
+        ><span
+          >Aperiam ea amet, vero aspernatur dignissimos ducimus autem ullam?
+          Deserunt deleniti aliquam libero consectetur illo dicta quam dolor
+          aperiam nobis, earum odit, quisquam quos nulla tempore quo, quae quod
+          numquam?</span
+        >
+      </p>
+      <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          iure cumque earum consectetur debitis sunt sapiente porro eaque,
+          expedita omnis ab tempore ipsam sit consequatur est veritatis
+          voluptates eveniet temporibus?</span
+        ><span
+          >Deserunt, autem. Error, dolore qui minus modi facilis iste vitae!
+          Eius alias quasi laudantium non reprehenderit voluptate quis fuga
+          nulla debitis excepturi illum, deleniti velit totam distinctio, nihil
+          ullam a!</span
+        ><span
+          >Quod rem in perferendis, et cupiditate labore optio sapiente
+          aspernatur iusto vero? Eveniet deserunt explicabo esse, animi libero
+          reprehenderit tempora dolorem optio quasi, beatae suscipit, sapiente
+          consequatur accusantium porro vero!</span
+        ><span
+          >Aperiam ea amet, vero aspernatur dignissimos ducimus autem ullam?
+          Deserunt deleniti aliquam libero consectetur illo dicta quam dolor
+          aperiam nobis, earum odit, quisquam quos nulla tempore quo, quae quod
+          numquam?</span
+        >
+      </p>
+    </main>
+
+    <script src="assets/js/79-settimeout-practice-2.js"></script>
+  </body>
+</html>

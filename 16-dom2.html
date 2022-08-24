@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <style>
+      .red {
+        background-color: red;
+      }
+
+      .blue {
+        background-color: blue;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-style{
+        color:yellowgreen;
+        text-shadow: 3px 5px 5px black;
+        padding: 2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Hello Javascript</h1>
+
+    <p id="pEl" class="red text-center">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat
+      laborum nobis voluptate rem, adipisci tenetur deleniti
+      <b>officiis maxime</b> consectetur cupiditate commodi, fugiat iste nihil
+      rerum neque nisi sunt quisquam?
+    </p>
+
+    <script>
+      let pEl = document.querySelector("#pEl");
+      pEl.classList.add("text-style");
+      pEl.classList.remove("red");
+      pEl.classList.add("blue");
+
+      pEl.classList.remove("text-center");
+      console.log(pEl.classList);
+
+    </script>
+  </body>
+</html>

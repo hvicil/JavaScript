@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1>Hello Javascript</h1>
+
+    <p class="desc">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat
+      laborum nobis voluptate rem, adipisci tenetur deleniti
+      <b>officiis maxime</b> consectetur cupiditate commodi, fugiat iste nihil
+      rerum neque nisi sunt quisquam?
+    </p>
+
+    <ul class="menu">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+
+    <script>
+      const elH1 = document.querySelector("h1");
+      console.log(elH1.innerText);
+
+      elH1.innerText = "Hello JS Word";
+
+      const elHome = document.querySelector(".menu li:first-child");
+      console.log(elHome.innerText);
+      elHome.innerText = "Home degil Ev";
+      elHome.innerHTML = "Anasayfa";
+
+      const allLi = document.querySelectorAll(".menu li");
+      console.log(allLi);
+
+      const elDesc = document.querySelector(".desc");
+      console.log(elDesc.innerText);
+    </script>
+  </body>
+</html>

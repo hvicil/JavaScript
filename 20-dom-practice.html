@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <style>
+      .red {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <input type="text" id="sayi1" />
+    <input type="text" id="sayi2" />
+    <button id="btnSum" onclick="sumNumbers()">Sum</button>
+    <h3 id="result"></h3>
+    <script>
+      const txtName = document.querySelector("#txtName");
+      const lblMesaj = document.querySelector("#lblMessage");
+
+      function sumNumbers() {
+        const num1 = document.querySelector("#sayi1").value;
+        const num2 = document.querySelector("#sayi2").value;
+        const result = Number(num1) + Number(num2);
+
+        const elResult = document.querySelector("#result");
+        elResult.innerHTML = result;
+        elResult.classList.add("red");
+      }
+    </script>
+  </body>
+</html>

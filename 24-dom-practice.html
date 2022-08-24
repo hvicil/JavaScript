@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <style>
+      :root {
+        --colorDark: rgb(37, 37, 37);
+        --colorLight: rgb(212, 209, 209);
+      }
+
+      button {
+        background-color: var(--colorDark);
+        color: var(--colorLight);
+        border-radius: 5px;
+        font-size: 1.5rem;
+      }
+
+      body.dark {
+        background-color: rgb(37, 37, 37);
+        color: rgb(212, 209, 209);
+      }
+
+      body.dark button {
+        background-color: var(--colorLight);
+        color: var(--colorDark);
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="btnMode" onclick="setMode()">Dark</button>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cumque magnam
+      suscipit facere sint unde. Dolorem consequatur tenetur non omnis!
+      Reiciendis aperiam inventore a dolores rem necessitatibus sit sed
+      eligendi.
+    </p>
+
+    <script>
+      let mode = "Light";
+      function setMode() {
+        if (mode == "Light") {
+          document.querySelector("body").classList.add("dark");
+          mode = "Dark";
+          btnMode = "Light";
+        } else {
+          document.querySelector("body").classList.remove("dark");
+          mode = "Light";
+          btnMode = "Dark";
+        }
+
+        document.querySelector("#btnMode").innerHTML = btnMode;
+      }
+    </script>
+  </body>
+</html>
